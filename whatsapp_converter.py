@@ -59,7 +59,7 @@ for i in processed_text:
     addition.append(msg_text)
 
     # Omit lines that aren't messages
-    skip_phrases = ['messages you send to this group', 'changed', 'added', 'created', "you're now an"]
+    skip_phrases = ['messages you send to this', 'changed', 'added', 'created', "you're now an"]
     add = True
     for phrase in skip_phrases:
         if phrase in name_text.lower():
